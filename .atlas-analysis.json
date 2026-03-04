@@ -1,0 +1,107 @@
+{
+  "projectType": "saas",
+  "projectName": "Snyk",
+  "projectDescription": "Developer security platform for scanning, prioritizing, and fixing vulnerabilities in code, dependencies, containers, and infrastructure",
+  "theme": "linden",
+  "primaryColor": "#441c9a",
+  "lightColor": "#7c5cb8",
+  "darkColor": "#2d1266",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          { "group": "Introduction", "pages": ["introduction", "whats-new"] },
+          { "group": "Discover Snyk", "pages": ["discover-snyk/what-is-snyk", "discover-snyk/getting-started", "discover-snyk/snyk-learn"] },
+          { "group": "Implementation", "pages": ["implementation/overview", "implementation/team-guide", "implementation/enterprise-guide"] }
+        ]
+      },
+      {
+        "tab": "Scan & Detect",
+        "groups": [
+          { "group": "Overview", "pages": ["scan/overview", "scan/start-scanning"] },
+          { "group": "Snyk Open Source", "pages": ["scan/snyk-open-source/overview", "scan/snyk-open-source/getting-started", "scan/snyk-open-source/scan-strategies"] },
+          { "group": "Snyk Code", "pages": ["scan/snyk-code/overview", "scan/snyk-code/getting-started", "scan/snyk-code/security-rules"] },
+          { "group": "Snyk Container", "pages": ["scan/snyk-container/overview", "scan/snyk-container/getting-started", "scan/snyk-container/integrations"] },
+          { "group": "Snyk IaC", "pages": ["scan/snyk-iac/overview", "scan/snyk-iac/getting-started", "scan/snyk-iac/supported-providers"] }
+        ]
+      },
+      {
+        "tab": "Developer Tools",
+        "groups": [
+          { "group": "Overview", "pages": ["developer-tools/overview"] },
+          { "group": "Snyk CLI", "pages": ["developer-tools/cli/overview", "developer-tools/cli/getting-started", "developer-tools/cli/commands", "developer-tools/cli/configuration"] },
+          { "group": "IDE Plugins", "pages": ["developer-tools/ide/overview", "developer-tools/ide/visual-studio-code", "developer-tools/ide/jetbrains", "developer-tools/ide/visual-studio"] },
+          { "group": "SCM Integrations", "pages": ["developer-tools/scm/overview", "developer-tools/scm/github", "developer-tools/scm/gitlab", "developer-tools/scm/bitbucket", "developer-tools/scm/azure-devops"] },
+          { "group": "CI/CD Integrations", "pages": ["developer-tools/cicd/overview", "developer-tools/cicd/jenkins", "developer-tools/cicd/github-actions", "developer-tools/cicd/gitlab-ci"] }
+        ]
+      },
+      {
+        "tab": "Manage Assets & Risk",
+        "groups": [
+          { "group": "Manage Assets", "pages": ["manage/assets/overview", "manage/assets/inventory", "manage/assets/asset-hierarchy"] },
+          { "group": "Manage Risk", "pages": ["manage/risk/overview", "manage/risk/prioritization", "manage/risk/policies"] },
+          { "group": "Snyk AppRisk", "pages": ["manage/apprisk/overview", "manage/apprisk/integrations", "manage/apprisk/policies"] },
+          { "group": "Fix Issues", "pages": ["manage/fix/overview", "manage/fix/pull-requests", "manage/fix/automated-fixes"] }
+        ]
+      },
+      {
+        "tab": "Platform",
+        "groups": [
+          { "group": "Administration", "pages": ["platform/overview", "platform/groups-and-organizations", "platform/user-management", "platform/notifications"] },
+          { "group": "Enterprise Setup", "pages": ["platform/enterprise/overview", "platform/enterprise/sso", "platform/enterprise/snyk-broker", "platform/enterprise/service-accounts"] },
+          { "group": "Data & Governance", "pages": ["platform/data/overview", "platform/data/privacy", "platform/data/compliance"] }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          { "group": "Overview", "pages": ["integrations/overview"] },
+          { "group": "Snyk Studio", "pages": ["integrations/snyk-studio/overview", "integrations/snyk-studio/getting-started", "integrations/snyk-studio/quickstart-guides"] },
+          { "group": "Jira & Slack", "pages": ["integrations/jira-slack/jira", "integrations/jira-slack/slack"] },
+          { "group": "Event Forwarding", "pages": ["integrations/event-forwarding/overview", "integrations/event-forwarding/aws-eventbridge", "integrations/event-forwarding/aws-security-hub"] },
+          { "group": "Partner Integrations", "pages": ["integrations/partner-integrations"] }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          { "group": "Getting Started", "pages": ["api/overview", "api/authentication", "api/rest-api", "api/v1-api"] },
+          { "group": "API Guides", "pages": ["api/guides/getting-started", "api/guides/endpoints", "api/guides/best-practices"] },
+          { "group": "Reference", "pages": ["api/reference/overview", "api/reference/changelog"] }
+        ]
+      },
+      {
+        "tab": "Supported Languages",
+        "groups": [
+          { "group": "Overview", "pages": ["languages/overview", "languages/technical-specifications"] },
+          { "group": "Languages", "pages": ["languages/javascript", "languages/python", "languages/java-kotlin", "languages/go", "languages/dotnet", "languages/ruby", "languages/php", "languages/c-cpp", "languages/swift"] }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Snyk Open Source - scan open-source dependencies for vulnerabilities",
+    "Snyk Code - SAST scanning for proprietary code",
+    "Snyk Container - container image and workload security",
+    "Snyk IaC - infrastructure as code security scanning",
+    "Snyk AppRisk - application risk management and prioritization",
+    "Snyk Essentials - asset management and coverage tracking",
+    "Developer-first security with IDE, CLI, and CI/CD integrations",
+    "Automated fix pull requests and dependency upgrades",
+    "Snyk Studio - agentic AI security integrations",
+    "Enterprise SSO, RBAC, and governance features"
+  ],
+  "publicApiSurface": [
+    "REST API - modern versioned API for programmatic access",
+    "V1 API - legacy API endpoints",
+    "OAuth2 API - authentication and service accounts",
+    "CLI Commands - snyk test, snyk monitor, snyk code test, snyk container test, snyk iac test",
+    "Snyk Broker - secure on-premise integration proxy",
+    "SCM Integrations - GitHub, GitLab, Bitbucket, Azure DevOps",
+    "Container Registry Integrations - ECR, GCR, ACR, Docker Hub, Artifactory",
+    "CI/CD Integrations - Jenkins, GitHub Actions, GitLab CI, CircleCI",
+    "Event Forwarding - AWS EventBridge, AWS Security Hub, CloudTrail Lake",
+    "Jira & Slack Integrations"
+  ]
+}
